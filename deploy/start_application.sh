@@ -2,7 +2,7 @@
 
 # Start Flask backend on port 9000
 cd /var/www/backend
-nohup python3 app.py &
+nohup python3 backend.py &
 
 # Start serving the frontend on port 8080
 cd /var/www/frontend
