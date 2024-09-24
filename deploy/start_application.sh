@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo fuser -k 9000/tcp
-# Start Flask backend on port 9000
+# Start Flask backend on port 4000
 cd /var/www/backend
 nohup python3 backend.py &
 
