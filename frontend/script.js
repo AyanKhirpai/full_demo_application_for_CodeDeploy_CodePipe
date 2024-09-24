@@ -3,7 +3,7 @@ document.getElementById('sum-form').addEventListener('submit', function(event) {
     const num1 = parseInt(document.getElementById('num1').value);
     const num2 = parseInt(document.getElementById('num2').value);
 
-    fetch('http://13.233.148.136:9000/sum', {
+    fetch('http://13.233.148.136:4000/sum', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
