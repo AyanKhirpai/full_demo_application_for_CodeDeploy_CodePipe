@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /frontend/
+    destination: /var/www/frontend/
+  - source: /backend/
+    destination: /var/www/backend/
+
+hooks:
+  AfterInstall:
+    - location: deploy/install_dependencies.sh
+      timeout: 300
+  ApplicationStart:
+    - location: deploy/start_application.sh
+      timeout: 300
