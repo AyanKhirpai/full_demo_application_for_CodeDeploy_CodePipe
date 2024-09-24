@@ -5,7 +5,7 @@ echo "Starting Flask backend..."
 cd /path/to/backend
 # Make sure your Flask app is set to listen on 0.0.0.0 so it can be accessed externally
 export FLASK_APP=backend.py  # Replace 'app.py' with your actual Flask entry point
-nohup flask run --host=0.0.0.0 --port=3000 > backend.log 2>&1 &
+nohup flask run --host=0.0.0.0 --port=4000 > backend.log 2>&1 &
 
 # Navigate to frontend directory and ser
 echo "Starting frontend..."
